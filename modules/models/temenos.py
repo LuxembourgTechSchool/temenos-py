@@ -9,10 +9,10 @@ class Temenos():
         self.host = app.config['TEMENOS_HOST']
         
     def get_accounts(self):
-        pass
+        return self._do_get_request('verAccount_Tcibs()')
     
     def get_account(self, account_id):
-        pass
+        return self._do_get_request('verAccount_Tcibs({})'.format(account_id))
     
     def __prepare_session(self):
         s = requests.Session()
