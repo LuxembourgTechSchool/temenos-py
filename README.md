@@ -19,6 +19,13 @@ Install the requirements:
 
     pip install -r requirements.txt
 
+# Configuration
+
+Before you start the server, you should create a development configuration file.
+Just go to `config/` and copy `config-dev-default.py` to `dev/config-dev.py`.
+
+There, you can just update the values and you are good to go.
+
 # Deployment
 
 *TODO*
