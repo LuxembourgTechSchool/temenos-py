@@ -12,7 +12,7 @@ class Temenos():
         return self._do_get_request('verAccount_Tcibs()')
     
     def get_account(self, account_id):
-        return self._do_get_request('verAccount_Tcibs({})'.format(account_id))
+        return self._do_get_request('enqTcibAcctDetailss({})'.format(account_id))
     
     def __prepare_session(self):
         s = requests.Session()
