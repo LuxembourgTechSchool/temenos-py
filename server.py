@@ -1,5 +1,10 @@
 from flask import Flask
+
+from modules.account.account import account_api
+
 app = Flask(__name__)
+
+app.register_blueprint(account_api)
 
 @app.route("/")
 def welcome():
